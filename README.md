@@ -6,7 +6,7 @@ Frontend fullstack проекта. Это информационный сайт 
 
 **Скриншоты работы:** [Ссылка](https://photos.app.goo.gl/BVgcqkGDkQhntX439)
 
-## Project setup
+### Project setup
 ```
 yarn install
 ```
