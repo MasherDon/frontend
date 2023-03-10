@@ -1,21 +1,176 @@
 # Frontend 
 
->Это мой первый Frontend и сразу на Vue. Больше Vue я не использовал) Это рабочий код недоработаного проекта с ошибоками и некоторыми багами.
+Frontend fullstack проекта. Это информационный сайт с функциями регистрации/авторизации пользователя и добавления/редактирования пользовательских статей.
 
-Информационный сайт с функциями регистрации/авторизации пользователя и добавления/редактирования статей пользователей.
+> Это мой первый целый Frontend и сразу на Vue. Это рабочий код недоделанного проекта с ошибоками.
 
-**Скриншоты:**
-[Ссылка](https://photos.app.goo.gl/BVgcqkGDkQhntX439)
+**Скриншоты работы:** [Ссылка](https://photos.app.goo.gl/BVgcqkGDkQhntX439)
 
 ## Project setup
 ```
 yarn install
 ```
-### Compiles and hot-reloads for development
+### Compiles
 ```
 yarn serve
 ```
-### Compiles and minifies for production
+
+# API
+
+Headers: Token *****
+
+## Post
+
+/users/login
 ```
-yarn build
+{
+	"user": {
+		"email": "string",
+		"password": "string"
+	}
+}
 ```
+
+/users
+```
+{
+	"user": {
+		"email": "string",
+		"username": "string",
+		"password": "string"
+	}
+}
+```
+
+
+/articles
+```
+{
+	"articles": {
+		"title": "string",
+		"description": "string",
+		"body": "string",
+		"tagList": [string]
+	}
+}
+```
+
+/articles/*****/favorite
+
+/profile/*****/favorite
+
+/map/marker
+```
+{
+	"marker": {
+        "image": "url",
+        "name": "string",
+        "lat": number,
+        "lng": number
+	}
+}
+```
+
+
+/region
+```
+{
+	"region": {
+        "intro": "url",
+        "name": "string",
+        "info": "string",
+        "put": string",
+        "lat": "number",
+        "ing": "number",
+        "map": "url",
+        "reserves": ["string", "string"],
+        "animal": ["string"]
+	}
+}
+```
+
+/map/polygon
+```
+{
+	"polygon": {
+        "paths": [number],
+        "intro": "url",
+        "map": "url",
+        "name": "string",
+        "info": "string"
+	}
+}
+```
+
+/reserve
+```
+{
+	"reserve": {
+        "intro": "url",
+        "name": "string",
+        "put": "string",
+        "info": "string",
+        "lat": "number",
+        "lng": "number",
+        "map": "url"
+	}
+}
+```
+
+/animal
+```
+{
+	"animal": {
+        "image": "url",
+        "name": "string",
+        "info": "string",
+        "put": "string",
+        "clas": [string]
+	}
+}
+```
+
+## Get
+
+/user
+
+/articles/*****
+
+/articles
+
+/profile/*****
+
+/articles/feed
+
+/region/*****
+
+## Put
+
+/user
+```
+{
+	"user": {
+		"bio": "string"
+	}
+}
+```
+
+/articles/*****
+```
+{
+	"articles": {
+		"title": "string",
+		"description": "string",
+		"body": "string",
+		"tagList": ["string"]
+	}
+}
+```
+
+## Delete
+
+/articles/*****
+
+/articles/*****/favorite
+
+/profile/*****/favorite
