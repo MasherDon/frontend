@@ -150,7 +150,10 @@ Headers: Token *****
 ```
 {
 	"user": {
-		"bio": "string"
+		"bio": "string",
+		"image": "url",
+		"email": "string",
+		"password": "string"
 	}
 }
 ```
