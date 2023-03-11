@@ -85,7 +85,7 @@ Headers: Token *****
         "lat": "number",
         "ing": "number",
         "map": "url",
-        "reserves": ["string", "string"],
+        "reserves": ["string"],
         "animal": ["string"]
 	}
 }
@@ -127,7 +127,7 @@ Headers: Token *****
         "name": "string",
         "info": "string",
         "put": "string",
-        "clas": [string]
+        "clas": ["string"]
 	}
 }
 ```
